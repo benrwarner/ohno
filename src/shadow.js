@@ -25,6 +25,17 @@ export function shadowDir(root) {
   return path.join(dataDir(), 'repos', hash);
 }
 
+// An empty config file to stand in for the user's global git config.
+// (Pointing GIT_CONFIG_GLOBAL at the null device breaks on Windows.)
+function emptyConfig() {
+  const p = path.join(dataDir(), 'noconfig');
+  if (!fs.existsSync(p)) {
+    fs.mkdirSync(dataDir(), { recursive: true });
+    fs.writeFileSync(p, '');
+  }
+  return p;
+}
+
 // Run git against the shadow repo with the project as the work tree.
 // System/global git config is masked so user hooks, gpg signing, fsmonitor,
 // etc. can never interfere with (or observe) snapshots.
@@ -40,8 +51,8 @@ export function git(root, args, opts = {}) {
       GIT_DIR: sd,
       GIT_WORK_TREE: root,
       GIT_INDEX_FILE: path.join(sd, 'index'),
-      GIT_CONFIG_SYSTEM: os.devNull,
-      GIT_CONFIG_GLOBAL: os.devNull,
+      GIT_CONFIG_NOSYSTEM: '1',
+      GIT_CONFIG_GLOBAL: emptyConfig(),
       ...(opts.env || {}),
     },
   });
