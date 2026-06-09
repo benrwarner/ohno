@@ -314,7 +314,7 @@ export function installCmd(root, what) {
   fs.writeFileSync(file, JSON.stringify(settings, null, 2) + '\n');
   console.log(`${green('✓')} Installed a Claude Code hook in ${cyan(path.relative(root, file) || file)}`);
   console.log(dim('  Every file edit by Claude is now preceded by a snapshot (deduped — no-ops are skipped).'));
-  console.log(dim('  Note: the hook runs `ohno`, so it must be on PATH (npm i -g ohno).'));
+  console.log(dim('  Note: the hook runs `ohno`, so it must be on PATH (npm i -g ohno-cli).'));
 }
 
 // ------------------------------------------------------------- housekeeping
