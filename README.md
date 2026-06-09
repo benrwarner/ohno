@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/benrw/ohno/actions/workflows/ci.yml"><img src="https://github.com/benrw/ohno/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/benrwarner/ohno/actions/workflows/ci.yml"><img src="https://github.com/benrwarner/ohno/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://www.npmjs.com/package/ohno"><img src="https://img.shields.io/npm/v/ohno.svg" alt="npm"></a>
   <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="zero dependencies">
   <img src="https://img.shields.io/badge/node-%E2%89%A520-blue" alt="node >= 20">

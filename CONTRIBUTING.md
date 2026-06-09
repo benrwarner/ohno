@@ -12,7 +12,7 @@ Thanks for helping make uncommitted work unloseable.
 ## Developing
 
 ```sh
-git clone https://github.com/benrw/ohno && cd ohno
+git clone https://github.com/benrwarner/ohno && cd ohno
 npm test                  # node's built-in test runner, no deps
 node bin/ohno.js help     # run your working copy
 ```
