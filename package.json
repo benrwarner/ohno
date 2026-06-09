@@ -1,5 +1,8 @@
 {
-  "name": "ohno-cli",
+  "name": "@benwarner/ohno",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.1.0",
   "description": "A flight recorder for your codebase. Automatic snapshots of uncommitted work — instant undo when an AI agent (or you) wrecks it.",
   "type": "module",

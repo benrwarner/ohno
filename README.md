@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/benrwarner/ohno/actions/workflows/ci.yml"><img src="https://github.com/benrwarner/ohno/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://www.npmjs.com/package/ohno-cli"><img src="https://img.shields.io/npm/v/ohno-cli.svg" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/@benwarner/ohno"><img src="https://img.shields.io/npm/v/%40benwarner%2Fohno.svg" alt="npm"></a>
   <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="zero dependencies">
   <img src="https://img.shields.io/badge/node-%E2%89%A520-blue" alt="node >= 20">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT"></a>
@@ -28,7 +28,7 @@ That gap used to be survivable — you lost your *own* last twenty minutes, occa
 ## Install
 
 ```sh
-npm install -g ohno-cli   # the command is just `ohno`
+npm install -g @benwarner/ohno   # the command is just `ohno`
 ```
 
 Requires Node ≥ 20 and `git` on your PATH. Zero npm dependencies — `ohno` is ~600 lines of plain JavaScript on top of git plumbing.
@@ -119,7 +119,7 @@ your-project/                          ~/.local/share/ohno/repos/<id>/
 | Touches your real repo | never | yes | writes branches into it | n/a |
 | One-command full rollback | ✅ `ohno undo` | ⚠️ if you committed | ❌ manual `git` archaeology | ⚠️ file by file |
 | Maintained | ✅ | — | unmaintained since 2022 | — |
-| Install | `npm i -g ohno-cli` | — | cargo + daemon setup | — |
+| Install | `npm i -g @benwarner/ohno` | — | cargo + daemon setup | — |
 
 ## FAQ
 
