@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="330" viewBox="0 0 720 330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">
+  <style>
+    .line { opacity: 0; }
+    @keyframes show1  { 0%,3%  { opacity: 0 } 5%,94%  { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show2  { 0%,10% { opacity: 0 } 12%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show3  { 0%,16% { opacity: 0 } 18%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show4  { 0%,22% { opacity: 0 } 24%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show5  { 0%,30% { opacity: 0 } 32%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show6  { 0%,44% { opacity: 0 } 46%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show7  { 0%,52% { opacity: 0 } 54%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show8  { 0%,58% { opacity: 0 } 60%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes show9  { 0%,66% { opacity: 0 } 68%,94% { opacity: 1 } 97%,100% { opacity: 0 } }
+    .l1 { animation: show1 14s linear infinite }
+    .l2 { animation: show2 14s linear infinite }
+    .l3 { animation: show3 14s linear infinite }
+    .l4 { animation: show4 14s linear infinite }
+    .l5 { animation: show5 14s linear infinite }
+    .l6 { animation: show6 14s linear infinite }
+    .l7 { animation: show7 14s linear infinite }
+    .l8 { animation: show8 14s linear infinite }
+    .l9 { animation: show9 14s linear infinite }
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    .cursor { animation: blink 1.1s step-end infinite }
+  </style>
+
+  <rect width="720" height="330" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="26" cy="24" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="24" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="24" r="6" fill="#28c840"/>
+  <text x="360" y="29" fill="#484f58" font-size="12" text-anchor="middle">~/projects/app</text>
+
+  <g class="line l1">
+    <text x="28" y="72"><tspan fill="#3fb950">$</tspan><tspan fill="#e6edf3" xml:space="preserve"> claude "clean up the auth module"</tspan></text>
+  </g>
+  <g class="line l2">
+    <text x="28" y="100"><tspan fill="#a371f7">⏺</tspan><tspan fill="#8b949e" xml:space="preserve"> Update(src/auth/session.ts)</tspan></text>
+  </g>
+  <g class="line l3">
+    <text x="28" y="128"><tspan fill="#a371f7">⏺</tspan><tspan fill="#8b949e" xml:space="preserve"> Bash(rm -rf src/auth/legacy/)</tspan></text>
+  </g>
+  <g class="line l4">
+    <text x="28" y="156"><tspan fill="#f85149" xml:space="preserve">✗ 847 lines of uncommitted work — gone</tspan></text>
+  </g>
+
+  <g class="line l5">
+    <text x="28" y="200"><tspan fill="#3fb950">$</tspan><tspan fill="#e6edf3" xml:space="preserve"> ohno undo</tspan></text>
+  </g>
+  <g class="line l6">
+    <text x="28" y="228"><tspan fill="#3fb950">✓</tspan><tspan fill="#e6edf3" xml:space="preserve"> Restored to </tspan><tspan fill="#d29922">ba5eba1</tspan><tspan fill="#8b949e" xml:space="preserve"> · claude: pre-edit · 2 minutes ago</tspan></text>
+  </g>
+  <g class="line l7">
+    <text x="28" y="256"><tspan fill="#8b949e" xml:space="preserve">  847 lines back. Breathe.</tspan></text>
+  </g>
+
+  <g class="line l8">
+    <text x="28" y="298"><tspan fill="#3fb950">$</tspan></text>
+  </g>
+  <g class="line l9">
+    <rect class="cursor" x="44" y="286" width="9" height="16" fill="#e6edf3"/>
+  </g>
+</svg>

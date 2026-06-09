@@ -1,0 +1,39 @@
+{
+  "name": "ohno",
+  "version": "0.1.0",
+  "description": "A flight recorder for your codebase. Automatic snapshots of uncommitted work — instant undo when an AI agent (or you) wrecks it.",
+  "type": "module",
+  "bin": {
+    "ohno": "bin/ohno.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20.13"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "git",
+    "snapshot",
+    "undo",
+    "backup",
+    "ai",
+    "claude-code",
+    "cursor",
+    "agent",
+    "safety",
+    "cli",
+    "dura",
+    "local-history"
+  ],
+  "author": "ohno contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benrw/ohno.git"
+  }
+}
